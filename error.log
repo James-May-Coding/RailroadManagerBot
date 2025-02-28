@@ -1,0 +1,17 @@
+[2024-09-14T21:46:53.257Z] Failed to ban user 1248727479468691737 in guild 891296610347253771: DiscordAPIError[50013]: Missing Permissions
+    at handleErrors (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:730:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SequentialHandler.runRequest (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:1133:23)
+    at async SequentialHandler.queueRequest (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:963:14)
+    at async _REST.request (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:1278:22)
+    at async GuildBanManager.create (C:\Users\James May\Documents\Railroad Manager\node_modules\discord.js\src\managers\GuildBanManager.js:169:5)
+    at async C:\Users\James May\Documents\Railroad Manager\src\index.js:109:21
+    at async Promise.all (index 3)
+    at async Client.<anonymous> (C:\Users\James May\Documents\Railroad Manager\src\index.js:107:13)
+[2024-09-14T21:46:57.311Z] Failed to ban the user in all servers or add to the ban list.: DiscordAPIError[10062]: Unknown interaction
+    at handleErrors (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:730:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async BurstHandler.runRequest (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:835:23)
+    at async _REST.request (C:\Users\James May\Documents\Railroad Manager\node_modules\@discordjs\rest\dist\index.js:1278:22)
+    at async ChatInputCommandInteraction.reply (C:\Users\James May\Documents\Railroad Manager\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:114:5)
+    at async Client.<anonymous> (C:\Users\James May\Documents\Railroad Manager\src\index.js:132:13)
