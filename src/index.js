@@ -3,6 +3,7 @@ const { Client, Intents, EmbedBuilder, SlashCommandBuilder, PermissionsBitField 
 const admin = require('firebase-admin');
 const cron = require('node-cron');
 const serviceAccount = require('./railroad-manager-4e2d4-firebase-adminsdk-861tn-9e70d69611.json');
+const { config } = require('dotenv');
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
@@ -250,4 +251,4 @@ client.on('interactionCreate', async (interaction) => {
     }
 });
 
-client.login('MTI1ODk1NzI3NTIyNjQ0Mzk4OA.GE44hg.2x1mEsSQuDZR5eZ4L74KYVXeTfmSmk7VB3PMAI');
+client.login(config.abc);
